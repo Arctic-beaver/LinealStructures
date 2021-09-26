@@ -1,0 +1,14 @@
+D:\Project\Lab_1_lineal\bin\Debug\Lab_1_lineal.exe.config
+D:\Project\Lab_1_lineal\bin\Debug\Lab_1_lineal.exe
+D:\Project\Lab_1_lineal\bin\Debug\Lab_1_lineal.pdb
+D:\Project\Lab_1_lineal\obj\Debug\Lab_1_lineal.csprojAssemblyReference.cache
+D:\Project\Lab_1_lineal\obj\Debug\Lab_1_lineal.Properties.Resources.resources
+D:\Project\Lab_1_lineal\obj\Debug\Lab_1_lineal.csproj.GenerateResource.cache
+D:\Project\Lab_1_lineal\obj\Debug\Lab_1_lineal.csproj.CoreCompileInputs.cache
+D:\Project\Lab_1_lineal\obj\Debug\Lab_1_lineal.exe
+D:\Project\Lab_1_lineal\obj\Debug\Lab_1_lineal.pdb
+D:\Project\Lab_1_lineal\obj\Debug\Lab_1_lineal.ArrayForm.resources
+D:\Project\Lab_1_lineal\obj\Debug\Lab_1_lineal.InfixPostfixForm.resources
+D:\Project\Lab_1_lineal\obj\Debug\Lab_1_lineal.StackForm.resources
+D:\Project\Lab_1_lineal\obj\Debug\Lab_1_lineal.StartForm.resources
+D:\Project\Lab_1_lineal\obj\Debug\Lab_1_lineal.ListForm.resources
