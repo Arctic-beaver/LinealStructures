@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayClass.cs" />
+    <Compile Include="StackClass.cs" />
+    <Compile Include="ListClass.cs" />
     <Compile Include="InfixPostfixForm.cs">
       <SubType>Form</SubType>
     </Compile>

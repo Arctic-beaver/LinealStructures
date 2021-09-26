@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab_1_lineal
 {
-    class Class1
+    class ListClass
     {
     }
 }
