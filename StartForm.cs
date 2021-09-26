@@ -25,8 +25,8 @@ namespace Lab_1_lineal
 
         private void Array_Click(object sender, EventArgs e)
         {
-            Form arrayForm = new ArrayForm();
-            arrayForm.ShowDialog();
+            Form arrayInitForm = new ArrayInitForm();
+            arrayInitForm.ShowDialog();
         }
 
         private void Stack_Click(object sender, EventArgs e)

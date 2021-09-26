@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab_1_lineal
 {
-    class ArrayClass
+    public class ArrayClass
     {
         static int length;
         int[] mas;

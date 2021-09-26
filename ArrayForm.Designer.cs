@@ -30,19 +30,10 @@ namespace Lab_1_lineal
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ArrayForm));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BackButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Lab_1_lineal.Properties.Resources.full1;
-            this.pictureBox1.Location = new System.Drawing.Point(-54, -7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(908, 92);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
             // 
             // BackButton
             // 
@@ -57,6 +48,15 @@ namespace Lab_1_lineal
             this.BackButton.UseVisualStyleBackColor = false;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Lab_1_lineal.Properties.Resources.full1;
+            this.pictureBox1.Location = new System.Drawing.Point(-54, -7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(908, 92);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // ArrayForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -69,6 +69,7 @@ namespace Lab_1_lineal
             this.Name = "ArrayForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Array";
+            this.Load += new System.EventHandler(this.ArrayForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

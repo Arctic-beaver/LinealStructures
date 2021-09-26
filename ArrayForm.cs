@@ -12,14 +12,21 @@ namespace Lab_1_lineal
 {
     public partial class ArrayForm : Form
     {
-        public ArrayForm()
+        ArrayClass array = new ArrayClass();
+        public ArrayForm(ArrayClass given_array)
         {
             InitializeComponent();
+            array = given_array;
         }
 
         private void BackButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ArrayForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

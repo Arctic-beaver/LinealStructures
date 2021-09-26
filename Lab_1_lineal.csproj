@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayClass.cs" />
+    <Compile Include="ArrayInitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArrayInitForm.Designer.cs">
+      <DependentUpon>ArrayInitForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="StackClass.cs" />
     <Compile Include="ListClass.cs" />
     <Compile Include="InfixPostfixForm.cs">
@@ -83,6 +89,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ArrayForm.resx">
       <DependentUpon>ArrayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArrayInitForm.resx">
+      <DependentUpon>ArrayInitForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InfixPostfixForm.resx">
       <DependentUpon>InfixPostfixForm.cs</DependentUpon>
