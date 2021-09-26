@@ -10,8 +10,8 @@ namespace Lab_1_lineal
     {
         static int length;
         int[] mas;
-        int filled_length = 0; 
-
+        static int filled_length = 0;
+        public int chosen_pos, chosen_el;
         public int Lenght()
         {
             return length;

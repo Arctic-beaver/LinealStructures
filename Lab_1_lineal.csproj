@@ -53,6 +53,18 @@
     <Compile Include="ArrayInitForm.Designer.cs">
       <DependentUpon>ArrayInitForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ArrayChooseElementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArrayChooseElementForm.Designer.cs">
+      <DependentUpon>ArrayChooseElementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArrayChoosePositionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArrayChoosePositionForm.Designer.cs">
+      <DependentUpon>ArrayChoosePositionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="StackClass.cs" />
     <Compile Include="ListClass.cs" />
     <Compile Include="InfixPostfixForm.cs">
@@ -92,6 +104,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ArrayInitForm.resx">
       <DependentUpon>ArrayInitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArrayChooseElementForm.resx">
+      <DependentUpon>ArrayChooseElementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArrayChoosePositionForm.resx">
+      <DependentUpon>ArrayChoosePositionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InfixPostfixForm.resx">
       <DependentUpon>InfixPostfixForm.cs</DependentUpon>

@@ -28,5 +28,10 @@ namespace Lab_1_lineal
         {
 
         }
+
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
