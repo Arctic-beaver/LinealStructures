@@ -39,7 +39,6 @@ namespace Lab_1_lineal
             {
                 doubled_mas[i] = mas[i];
             }
-            //mas соберёт сборщик мусора, тк нет ссылок
             length *= 2;
             mas = doubled_mas;
         }
@@ -70,18 +69,31 @@ namespace Lab_1_lineal
 
         public int Get(int position)
         {
-            //-1 
-            return;
+            return mas[position];
         }
 
         public int Find(int element)
         {
-            return;
+            for (int i = 0; i < filled_length; i++)
+            {
+                //return position
+                if (mas[i] == element) return i;
+            }
+            //if we haven't got such an element
+            return -1;
         }
 
-        public int[] Delete()
+        public void Delete(int position)
         {
-            return;
+            mas[position] = 0;
+            if (position != filled_length - 1)
+            {
+                for (int i = position; i < filled_length - 1; i++)
+                {
+                    mas[i] = mas[i + 1];
+                }
+            }
+        
         } 
 
         public void Free()
