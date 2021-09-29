@@ -45,7 +45,7 @@ namespace Lab_1_lineal
             this.BackButton.BackColor = System.Drawing.Color.DarkSalmon;
             this.BackButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BackButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BackButton.Location = new System.Drawing.Point(318, 354);
+            this.BackButton.Location = new System.Drawing.Point(347, 400);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(127, 37);
             this.BackButton.TabIndex = 14;
@@ -66,7 +66,7 @@ namespace Lab_1_lineal
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(62, 139);
+            this.label1.Location = new System.Drawing.Point(91, 185);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(638, 32);
             this.label1.TabIndex = 15;
@@ -76,7 +76,7 @@ namespace Lab_1_lineal
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(239, 186);
+            this.label2.Location = new System.Drawing.Point(268, 232);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(286, 32);
             this.label2.TabIndex = 16;
@@ -86,7 +86,7 @@ namespace Lab_1_lineal
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(95, 280);
+            this.label3.Location = new System.Drawing.Point(124, 326);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(148, 32);
             this.label3.TabIndex = 17;
@@ -94,7 +94,7 @@ namespace Lab_1_lineal
             // 
             // array_size
             // 
-            this.array_size.Location = new System.Drawing.Point(486, 280);
+            this.array_size.Location = new System.Drawing.Point(515, 326);
             this.array_size.Minimum = new decimal(new int[] {
             1,
             0,
@@ -116,7 +116,7 @@ namespace Lab_1_lineal
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(827, 605);
             this.Controls.Add(this.array_size);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -125,6 +125,7 @@ namespace Lab_1_lineal
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ArrayInitForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InitializeArray";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.array_size)).EndInit();

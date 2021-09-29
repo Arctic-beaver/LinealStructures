@@ -46,37 +46,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArrayClass.cs" />
-    <Compile Include="ArrayInitForm.cs">
+    <Compile Include="ArrayFolder\ArrayClass.cs" />
+    <Compile Include="ArrayFolder\ArrayInitForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ArrayInitForm.Designer.cs">
+    <Compile Include="ArrayFolder\ArrayInitForm.Designer.cs">
       <DependentUpon>ArrayInitForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ArrayChooseElementForm.cs">
+    <Compile Include="ArrayFolder\ArrayChooseElementForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ArrayChooseElementForm.Designer.cs">
+    <Compile Include="ArrayFolder\ArrayChooseElementForm.Designer.cs">
       <DependentUpon>ArrayChooseElementForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ArrayChoosePositionForm.cs">
+    <Compile Include="ArrayFolder\ArrayChoosePositionForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ArrayChoosePositionForm.Designer.cs">
+    <Compile Include="ArrayFolder\ArrayChoosePositionForm.Designer.cs">
       <DependentUpon>ArrayChoosePositionForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="StackClass.cs" />
-    <Compile Include="ListClass.cs" />
-    <Compile Include="InfixPostfixForm.cs">
+    <Compile Include="StackFolder\StackClass.cs" />
+    <Compile Include="ListFolder\ListClass.cs" />
+    <Compile Include="InfixPostfixFormFolder\InfixPostfixForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InfixPostfixForm.Designer.cs">
+    <Compile Include="InfixPostfixFormFolder\InfixPostfixForm.Designer.cs">
       <DependentUpon>InfixPostfixForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="StackForm.cs">
+    <Compile Include="StackFolder\StackForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StackForm.Designer.cs">
+    <Compile Include="StackFolder\StackForm.Designer.cs">
       <DependentUpon>StackForm.cs</DependentUpon>
     </Compile>
     <Compile Include="StartForm.cs">
@@ -85,42 +85,42 @@
     <Compile Include="StartForm.Designer.cs">
       <DependentUpon>StartForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListForm.cs">
+    <Compile Include="ListFolder\ListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListForm.Designer.cs">
+    <Compile Include="ListFolder\ListForm.Designer.cs">
       <DependentUpon>ListForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ArrayForm.cs">
+    <Compile Include="ArrayFolder\ArrayForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ArrayForm.Designer.cs">
+    <Compile Include="ArrayFolder\ArrayForm.Designer.cs">
       <DependentUpon>ArrayForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ArrayForm.resx">
+    <EmbeddedResource Include="ArrayFolder\ArrayForm.resx">
       <DependentUpon>ArrayForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ArrayInitForm.resx">
+    <EmbeddedResource Include="ArrayFolder\ArrayInitForm.resx">
       <DependentUpon>ArrayInitForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ArrayChooseElementForm.resx">
+    <EmbeddedResource Include="ArrayFolder\ArrayChooseElementForm.resx">
       <DependentUpon>ArrayChooseElementForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ArrayChoosePositionForm.resx">
+    <EmbeddedResource Include="ArrayFolder\ArrayChoosePositionForm.resx">
       <DependentUpon>ArrayChoosePositionForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InfixPostfixForm.resx">
+    <EmbeddedResource Include="InfixPostfixFormFolder\InfixPostfixForm.resx">
       <DependentUpon>InfixPostfixForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StackForm.resx">
+    <EmbeddedResource Include="StackFolder\StackForm.resx">
       <DependentUpon>StackForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartForm.resx">
       <DependentUpon>StartForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListForm.resx">
+    <EmbeddedResource Include="ListFolder\ListForm.resx">
       <DependentUpon>ListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

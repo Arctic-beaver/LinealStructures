@@ -17,17 +17,31 @@ namespace Lab_1_lineal
             return length;
         }
 
+        public int FilledLength()
+        {
+            return filled_length;
+        }
         public int[] CreateArray(int given_length)
         {
             mas = new int[given_length];
+            for (int i = 0; i < given_length; i++)
+            {
+                mas[i] = i;
+            }
             length = given_length;
+            filled_length = length;
             return mas;
         }
 
         public int[] CreateArray()
         {
             mas = new int[5];
+            for (int i = 0; i < 5; i++)
+            {
+                mas[i] = i;
+            }
             length = 5;
+            filled_length = length;
             return mas;
         }
 
@@ -45,6 +59,7 @@ namespace Lab_1_lineal
 
         public void Add(int element, int position)
         {
+            if (position > filled_length) return;
             if ((position == length-1)||(filled_length == length))
             {
                 Resize();

@@ -101,7 +101,9 @@ namespace Lab_1_lineal
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ArrayChoosePositionForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Choose position";
+            this.Load += new System.EventHandler(this.ArrayChoosePositionForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chosenPos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

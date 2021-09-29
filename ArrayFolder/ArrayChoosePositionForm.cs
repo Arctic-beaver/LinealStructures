@@ -29,5 +29,11 @@ namespace Lab_1_lineal
             array.chosen_pos = (int)chosenPos.Value;
             this.Close();
         }
+
+        private void ArrayChoosePositionForm_Load(object sender, EventArgs e)
+        {
+            chosenPos.Maximum = array.FilledLength();
+            chosenPos.Minimum = 0;
+        }
     }
 }

@@ -49,7 +49,7 @@ namespace Lab_1_lineal
             this.BackButton.BackColor = System.Drawing.Color.DarkSalmon;
             this.BackButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BackButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BackButton.Location = new System.Drawing.Point(661, 401);
+            this.BackButton.Location = new System.Drawing.Point(688, 556);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(127, 37);
             this.BackButton.TabIndex = 13;
@@ -62,7 +62,7 @@ namespace Lab_1_lineal
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(827, 605);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

@@ -12,3 +12,6 @@ D:\Project\Lab_1_lineal\obj\Debug\Lab_1_lineal.InfixPostfixForm.resources
 D:\Project\Lab_1_lineal\obj\Debug\Lab_1_lineal.StackForm.resources
 D:\Project\Lab_1_lineal\obj\Debug\Lab_1_lineal.StartForm.resources
 D:\Project\Lab_1_lineal\obj\Debug\Lab_1_lineal.ListForm.resources
+D:\Project\Lab_1_lineal\obj\Debug\Lab_1_lineal.ArrayInitForm.resources
+D:\Project\Lab_1_lineal\obj\Debug\Lab_1_lineal.ArrayChooseElementForm.resources
+D:\Project\Lab_1_lineal\obj\Debug\Lab_1_lineal.ArrayChoosePositionForm.resources
