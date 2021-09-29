@@ -40,7 +40,7 @@ namespace Lab_1_lineal
             // 
             // chosenPos
             // 
-            this.chosenPos.Location = new System.Drawing.Point(459, 138);
+            this.chosenPos.Location = new System.Drawing.Point(487, 138);
             this.chosenPos.Minimum = new decimal(new int[] {
             1,
             0,
@@ -61,7 +61,7 @@ namespace Lab_1_lineal
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(92, 128);
+            this.label1.Location = new System.Drawing.Point(120, 128);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(231, 32);
             this.label1.TabIndex = 27;
@@ -72,7 +72,7 @@ namespace Lab_1_lineal
             this.BackButton.BackColor = System.Drawing.Color.DarkSalmon;
             this.BackButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BackButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BackButton.Location = new System.Drawing.Point(325, 198);
+            this.BackButton.Location = new System.Drawing.Point(353, 198);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(127, 37);
             this.BackButton.TabIndex = 26;
@@ -94,7 +94,7 @@ namespace Lab_1_lineal
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
-            this.ClientSize = new System.Drawing.Size(800, 264);
+            this.ClientSize = new System.Drawing.Size(827, 264);
             this.Controls.Add(this.chosenPos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BackButton);

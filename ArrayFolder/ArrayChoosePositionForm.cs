@@ -13,10 +13,12 @@ namespace Lab_1_lineal
     public partial class ArrayChoosePositionForm : Form
     {
         ArrayClass array;
-        public ArrayChoosePositionForm(ArrayClass givenArray)
+        bool include_first_zero;
+        public ArrayChoosePositionForm(ArrayClass givenArray, bool include_first_zero_given)
         {
             InitializeComponent();
             array = givenArray;
+            include_first_zero = include_first_zero_given;
         }
 
         private void array_size_ValueChanged(object sender, EventArgs e)
@@ -32,7 +34,15 @@ namespace Lab_1_lineal
 
         private void ArrayChoosePositionForm_Load(object sender, EventArgs e)
         {
-            chosenPos.Maximum = array.FilledLength();
+            if (include_first_zero)
+            {
+                chosenPos.Maximum = array.FilledLength();
+            }
+            else
+            {
+                chosenPos.Maximum = array.FilledLength() - 1;
+            }
+            
             chosenPos.Minimum = 0;
         }
     }

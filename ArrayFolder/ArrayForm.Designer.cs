@@ -68,19 +68,20 @@ namespace Lab_1_lineal
             this.LenghtBurron.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LenghtBurron.Location = new System.Drawing.Point(516, 111);
             this.LenghtBurron.Name = "LenghtBurron";
-            this.LenghtBurron.Size = new System.Drawing.Size(137, 61);
+            this.LenghtBurron.Size = new System.Drawing.Size(164, 61);
             this.LenghtBurron.TabIndex = 13;
             this.LenghtBurron.Text = "See lenght of an array";
             this.LenghtBurron.UseVisualStyleBackColor = false;
+            this.LenghtBurron.Click += new System.EventHandler(this.LenghtBurron_Click);
             // 
             // AddButton
             // 
             this.AddButton.BackColor = System.Drawing.Color.Bisque;
             this.AddButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AddButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AddButton.Location = new System.Drawing.Point(147, 111);
+            this.AddButton.Location = new System.Drawing.Point(129, 111);
             this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(127, 61);
+            this.AddButton.Size = new System.Drawing.Size(145, 61);
             this.AddButton.TabIndex = 14;
             this.AddButton.Text = "Add element";
             this.AddButton.UseVisualStyleBackColor = false;
@@ -97,18 +98,20 @@ namespace Lab_1_lineal
             this.FindPositionButton.TabIndex = 15;
             this.FindPositionButton.Text = "Find position of an element";
             this.FindPositionButton.UseVisualStyleBackColor = false;
+            this.FindPositionButton.Click += new System.EventHandler(this.FindPositionButton_Click);
             // 
             // DeleteButton
             // 
             this.DeleteButton.BackColor = System.Drawing.Color.Bisque;
             this.DeleteButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DeleteButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DeleteButton.Location = new System.Drawing.Point(147, 191);
+            this.DeleteButton.Location = new System.Drawing.Point(129, 191);
             this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(127, 61);
+            this.DeleteButton.Size = new System.Drawing.Size(145, 61);
             this.DeleteButton.TabIndex = 16;
             this.DeleteButton.Text = "Delete element";
             this.DeleteButton.UseVisualStyleBackColor = false;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // GetElementButton
             // 
@@ -121,6 +124,7 @@ namespace Lab_1_lineal
             this.GetElementButton.TabIndex = 17;
             this.GetElementButton.Text = "Get element on position";
             this.GetElementButton.UseVisualStyleBackColor = false;
+            this.GetElementButton.Click += new System.EventHandler(this.GetElementButton_Click);
             // 
             // FilledLenghtButton
             // 
@@ -129,10 +133,11 @@ namespace Lab_1_lineal
             this.FilledLenghtButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FilledLenghtButton.Location = new System.Drawing.Point(516, 191);
             this.FilledLenghtButton.Name = "FilledLenghtButton";
-            this.FilledLenghtButton.Size = new System.Drawing.Size(137, 61);
+            this.FilledLenghtButton.Size = new System.Drawing.Size(164, 61);
             this.FilledLenghtButton.TabIndex = 18;
             this.FilledLenghtButton.Text = "See number of elements";
             this.FilledLenghtButton.UseVisualStyleBackColor = false;
+            this.FilledLenghtButton.Click += new System.EventHandler(this.FilledLenghtButton_Click);
             // 
             // MasLabel
             // 

@@ -19,10 +19,15 @@ namespace Lab_1_lineal
             array = given_array;
         }
 
+        ~ArrayForm()
+        {
+            array.Free();
+        }
+
         public void WriteArray()
         {
             string mas_to_str = "";
-            for (int i = 0; i < array.Lenght(); i++)
+            for (int i = 0; i < array.Length(); i++)
             {
                 mas_to_str += array.Get(i) + " ";
                 if ((i % 20 == 0) && (i != 0)) mas_to_str += "\n";
@@ -48,7 +53,7 @@ namespace Lab_1_lineal
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            Form arrayChoosePositionForm = new ArrayChoosePositionForm(array);
+            Form arrayChoosePositionForm = new ArrayChoosePositionForm(array, true);
             arrayChoosePositionForm.ShowDialog();
             mainArrayLabel.Text = "Write a number (element that you want to add) -> ";
             NextAddButton.Text = "Next";
@@ -70,6 +75,50 @@ namespace Lab_1_lineal
             mainArrayBox.Visible = false;
             pictureBox2.Visible = true;
             WriteArray();
+        }
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            if (array.FilledLength() == 0)
+            {
+                MessageBox.Show("Чтобы продать что-нибудь ненужное, нужно купить что-нибудь ненужное... Короче нечего удалять.");
+            }
+            Form arrayChoosePositionForm = new ArrayChoosePositionForm(array, false);
+            arrayChoosePositionForm.ShowDialog();
+
+            array.Delete(array.chosen_pos);
+            MessageBox.Show("Элемент успешно удалён!");
+
+            WriteArray();
+        }
+
+        private void GetElementButton_Click(object sender, EventArgs e)
+        {
+            Form arrayChoosePositionForm = new ArrayChoosePositionForm(array, false);
+            arrayChoosePositionForm.ShowDialog();
+            MessageBox.Show("Element on this position: " + Convert.ToString(array.Get(array.chosen_pos)));
+        }
+
+        private void FindPositionButton_Click(object sender, EventArgs e)
+        {
+            Form arrayChosenElementForm = new ArrayChooseElementForm(array);
+            arrayChosenElementForm.ShowDialog();
+            int result = array.Find(array.chosen_el);
+            if (result == -1)
+            {
+                MessageBox.Show("We don't have such an element in our array!");
+            }
+            else MessageBox.Show("Position: " + Convert.ToString(result));
+        }
+
+        private void LenghtBurron_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Length: " + Convert.ToString(array.Length()));
+        }
+
+        private void FilledLenghtButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Amount of elements: " + Convert.ToString(array.FilledLength()));
         }
     }
 }

@@ -21,8 +21,13 @@ namespace Lab_1_lineal
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-            array.chosen_el = (int)chosenEl.Value;
+            array.chosen_el = Convert.ToInt32(chosenE1.Text);
             this.Close();
+        }
+
+        private void chosenEl_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

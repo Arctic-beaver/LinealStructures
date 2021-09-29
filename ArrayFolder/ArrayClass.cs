@@ -12,7 +12,8 @@ namespace Lab_1_lineal
         int[] mas;
         static int filled_length = 0;
         public int chosen_pos, chosen_el;
-        public int Lenght()
+
+        public int Length()
         {
             return length;
         }
@@ -103,17 +104,19 @@ namespace Lab_1_lineal
             mas[position] = 0;
             if (position != filled_length - 1)
             {
-                for (int i = position; i < filled_length - 1; i++)
+                for (int i = position; i < filled_length; i++)
                 {
                     mas[i] = mas[i + 1];
                 }
             }
-        
+            filled_length -= 1;
         } 
 
         public void Free()
         {
-
+            Array.Clear(mas, 0, length);
+            length = 0;
+            filled_length = 0;
         }
     }
 }
