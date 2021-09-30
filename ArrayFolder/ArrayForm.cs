@@ -67,7 +67,11 @@ namespace Lab_1_lineal
         private void NextAddButton_Click(object sender, EventArgs e)
         {
             if (mainArrayBox.Text == "") return;
-            array.Add(Convert.ToInt32(mainArrayBox.Text), array.chosen_pos);
+            int number;
+            bool success = int.TryParse(mainArrayBox.Text, out number);
+            if (success)
+            {
+                array.Add(Convert.ToInt32(mainArrayBox.Text), array.chosen_pos);
             MessageBox.Show("Элемент успешно добавлен!");
             NextAddButton.Visible = false;
             NextAddButton.Enabled = false;
@@ -75,6 +79,12 @@ namespace Lab_1_lineal
             mainArrayBox.Visible = false;
             pictureBox2.Visible = true;
             WriteArray();
+            }
+            else
+            {
+                MessageBox.Show("Wrong entering!");
+            }
+            
         }
 
         private void DeleteButton_Click(object sender, EventArgs e)

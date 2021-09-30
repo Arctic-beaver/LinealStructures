@@ -39,13 +39,13 @@ namespace Lab_1_lineal
             this.FilledLenghtButton = new System.Windows.Forms.Button();
             this.MasLabel = new System.Windows.Forms.Label();
             this.YourArrayLabel = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mainArrayBox = new System.Windows.Forms.TextBox();
             this.mainArrayLabel = new System.Windows.Forms.Label();
             this.NextAddButton = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // BackButton
@@ -159,15 +159,6 @@ namespace Lab_1_lineal
             this.YourArrayLabel.TabIndex = 21;
             this.YourArrayLabel.Text = "Your array:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Lab_1_lineal.Properties.Resources.full1;
-            this.pictureBox1.Location = new System.Drawing.Point(-54, -7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(908, 92);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
             // mainArrayBox
             // 
             this.mainArrayBox.Location = new System.Drawing.Point(151, 351);
@@ -201,11 +192,20 @@ namespace Lab_1_lineal
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Lab_1_lineal.Properties.Resources.full1;
-            this.pictureBox2.Location = new System.Drawing.Point(-43, 290);
+            this.pictureBox2.Location = new System.Drawing.Point(-63, 290);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(908, 92);
             this.pictureBox2.TabIndex = 25;
             this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Lab_1_lineal.Properties.Resources.full1;
+            this.pictureBox1.Location = new System.Drawing.Point(-54, -7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(908, 92);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
             // 
             // ArrayForm
             // 
@@ -232,8 +232,8 @@ namespace Lab_1_lineal
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Array";
             this.Load += new System.EventHandler(this.ArrayForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

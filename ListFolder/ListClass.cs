@@ -8,7 +8,7 @@ namespace Lab_1_lineal
 {
     public class ListClass
     {
-        static Node head = new Node();
+        static Node head;
         static int amount_of_nodes = 0;
 
         public int chosen_pos, chosen_el;
@@ -59,6 +59,31 @@ namespace Lab_1_lineal
             return shovel;
         }
 
+        public int GetDataOnPos(int position)
+        {
+            Node shovel = head;
+            for (int i = 0; i <= position; i++)
+            {
+                shovel = shovel.GetNext();
+            }
+            return shovel.GetData();
+        }
+
+        public int Find(int element)
+        {
+            int position = 0;
+
+            Node shovel = head;
+            while (shovel.GetNext() != null)
+            {
+                shovel = shovel.GetNext();
+                if (shovel.GetData() == element) return position;
+                position += 1;
+            }
+            //if we don't have such an element
+            return -1;
+        }
+
         public void CreateNode(Node previous, int data, bool is_end)
         {
             //to the end or center
@@ -82,6 +107,7 @@ namespace Lab_1_lineal
             {
                 new_node.SetNext(head.GetNext());
             }
+            else head = new Node();
             head.SetNext(new_node);
         }
 
@@ -119,6 +145,7 @@ namespace Lab_1_lineal
         public void Free()
         {
             head = null;
+            amount_of_nodes = 0;
         }
     }
 }

@@ -90,6 +90,7 @@ namespace Lab_1_lineal
             this.Name = "ArrayChooseElementForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Choose element";
+            this.Load += new System.EventHandler(this.ArrayChooseElementForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

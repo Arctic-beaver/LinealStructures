@@ -50,9 +50,9 @@ namespace Lab_1_lineal
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(25, 118);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(553, 32);
+            this.label1.Size = new System.Drawing.Size(525, 32);
             this.label1.TabIndex = 36;
-            this.label1.Text = "Write number that you want to find in array:";
+            this.label1.Text = "Write number that you want to find in list:";
             // 
             // NextButton
             // 
@@ -65,6 +65,7 @@ namespace Lab_1_lineal
             this.NextButton.TabIndex = 35;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = false;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // pictureBox1
             // 
@@ -89,6 +90,7 @@ namespace Lab_1_lineal
             this.Name = "ListChooseElementForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Choose element";
+            this.Load += new System.EventHandler(this.ListChooseElementForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

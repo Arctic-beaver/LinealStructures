@@ -30,9 +30,7 @@ namespace Lab_1_lineal
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListForm));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BackButton = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.NextAddButton = new System.Windows.Forms.Button();
             this.mainArrayLabel = new System.Windows.Forms.Label();
             this.mainArrayBox = new System.Windows.Forms.TextBox();
@@ -43,19 +41,11 @@ namespace Lab_1_lineal
             this.DeleteButton = new System.Windows.Forms.Button();
             this.FindPositionButton = new System.Windows.Forms.Button();
             this.AddButton = new System.Windows.Forms.Button();
-            this.LenghtBurron = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Lab_1_lineal.Properties.Resources.full1;
-            this.pictureBox1.Location = new System.Drawing.Point(-54, -7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(908, 92);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
             // 
             // BackButton
             // 
@@ -69,15 +59,6 @@ namespace Lab_1_lineal
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = false;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Lab_1_lineal.Properties.Resources.full1;
-            this.pictureBox2.Location = new System.Drawing.Point(-32, 299);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(908, 92);
-            this.pictureBox2.TabIndex = 39;
-            this.pictureBox2.TabStop = false;
             // 
             // NextAddButton
             // 
@@ -140,18 +121,20 @@ namespace Lab_1_lineal
             this.FilledLenghtButton.TabIndex = 33;
             this.FilledLenghtButton.Text = "See number of elements";
             this.FilledLenghtButton.UseVisualStyleBackColor = false;
+            this.FilledLenghtButton.Click += new System.EventHandler(this.FilledLenghtButton_Click);
             // 
             // GetElementButton
             // 
             this.GetElementButton.BackColor = System.Drawing.Color.Bisque;
             this.GetElementButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.GetElementButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.GetElementButton.Location = new System.Drawing.Point(325, 120);
+            this.GetElementButton.Location = new System.Drawing.Point(436, 120);
             this.GetElementButton.Name = "GetElementButton";
             this.GetElementButton.Size = new System.Drawing.Size(157, 61);
             this.GetElementButton.TabIndex = 32;
             this.GetElementButton.Text = "Get element on position";
             this.GetElementButton.UseVisualStyleBackColor = false;
+            this.GetElementButton.Click += new System.EventHandler(this.GetElementButton_Click);
             // 
             // DeleteButton
             // 
@@ -164,6 +147,7 @@ namespace Lab_1_lineal
             this.DeleteButton.TabIndex = 31;
             this.DeleteButton.Text = "Delete element";
             this.DeleteButton.UseVisualStyleBackColor = false;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // FindPositionButton
             // 
@@ -176,13 +160,14 @@ namespace Lab_1_lineal
             this.FindPositionButton.TabIndex = 30;
             this.FindPositionButton.Text = "Find position of an element";
             this.FindPositionButton.UseVisualStyleBackColor = false;
+            this.FindPositionButton.Click += new System.EventHandler(this.FindPositionButton_Click);
             // 
             // AddButton
             // 
             this.AddButton.BackColor = System.Drawing.Color.Bisque;
             this.AddButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AddButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AddButton.Location = new System.Drawing.Point(137, 120);
+            this.AddButton.Location = new System.Drawing.Point(234, 120);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(145, 61);
             this.AddButton.TabIndex = 29;
@@ -190,17 +175,23 @@ namespace Lab_1_lineal
             this.AddButton.UseVisualStyleBackColor = false;
             this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
-            // LenghtBurron
+            // pictureBox2
             // 
-            this.LenghtBurron.BackColor = System.Drawing.Color.Bisque;
-            this.LenghtBurron.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LenghtBurron.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LenghtBurron.Location = new System.Drawing.Point(524, 120);
-            this.LenghtBurron.Name = "LenghtBurron";
-            this.LenghtBurron.Size = new System.Drawing.Size(164, 61);
-            this.LenghtBurron.TabIndex = 28;
-            this.LenghtBurron.Text = "See lenght of an array";
-            this.LenghtBurron.UseVisualStyleBackColor = false;
+            this.pictureBox2.Image = global::Lab_1_lineal.Properties.Resources.full1;
+            this.pictureBox2.Location = new System.Drawing.Point(-30, 296);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(908, 92);
+            this.pictureBox2.TabIndex = 39;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Lab_1_lineal.Properties.Resources.full1;
+            this.pictureBox1.Location = new System.Drawing.Point(-54, -7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(908, 92);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // ListForm
             // 
@@ -219,7 +210,6 @@ namespace Lab_1_lineal
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.FindPositionButton);
             this.Controls.Add(this.AddButton);
-            this.Controls.Add(this.LenghtBurron);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -227,8 +217,8 @@ namespace Lab_1_lineal
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "List";
             this.Load += new System.EventHandler(this.ListForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,6 +238,5 @@ namespace Lab_1_lineal
         private System.Windows.Forms.Button DeleteButton;
         private System.Windows.Forms.Button FindPositionButton;
         private System.Windows.Forms.Button AddButton;
-        private System.Windows.Forms.Button LenghtBurron;
     }
 }
