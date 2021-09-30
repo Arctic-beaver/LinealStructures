@@ -11,7 +11,8 @@ namespace Lab_1_lineal
         static Node head;
         static int amount_of_nodes = 0;
 
-        public int chosen_pos, chosen_el;
+        public int chosen_pos;
+        public string chosen_el;
 
         public Node GetHead()
         {
@@ -59,7 +60,7 @@ namespace Lab_1_lineal
             return shovel;
         }
 
-        public int GetDataOnPos(int position)
+        public string GetDataOnPos(int position)
         {
             Node shovel = head;
             for (int i = 0; i <= position; i++)
@@ -69,7 +70,7 @@ namespace Lab_1_lineal
             return shovel.GetData();
         }
 
-        public int Find(int element)
+        public int Find(string element)
         {
             int position = 0;
 
@@ -84,7 +85,7 @@ namespace Lab_1_lineal
             return -1;
         }
 
-        public void CreateNode(Node previous, int data, bool is_end)
+        public void CreateNode(Node previous, string data, bool is_end)
         {
             //to the end or center
             Node new_node = new Node();
@@ -97,7 +98,7 @@ namespace Lab_1_lineal
             previous.SetNext(new_node);
         }
 
-        public void CreateNode(int data)
+        public void CreateNode(string data)
         {
             //to head
             Node new_node = new Node();
@@ -111,7 +112,7 @@ namespace Lab_1_lineal
             head.SetNext(new_node);
         }
 
-        public void Add(int data, int position)
+        public void Add(string data, int position)
         {
             if (position == 0)
             {

@@ -10,31 +10,32 @@ namespace Lab_1_lineal
     {
         public ListClass list = new ListClass();
 
-        public void Push(int data)
+        public void Push(string data)
         {
             list.Add(data, list.GetAmountOfNodes());
         }
 
-        public int Pop ()
+        public string Pop ()
         {
-            int result = list.GetDataOnPos(list.GetAmountOfNodes() - 1);
+            string result = list.GetDataOnPos(list.GetAmountOfNodes() - 1);
             list.Delete(list.GetAmountOfNodes() - 1);
             return result;
         }
 
-        public int Peek()
+        public string Peek()
         {
              return list.GetDataOnPos(list.GetAmountOfNodes() - 1);
         }
 
-        public void Contains()
+        public bool Contains(string data)
         {
-
+            if (list.Find(data) != -1) return true;
+            else return false;
         }
 
-        public void AmountOfEl()
+        public int AmountOfEl()
         {
-
+            return list.GetAmountOfNodes();
         }
 
         public void Finish()

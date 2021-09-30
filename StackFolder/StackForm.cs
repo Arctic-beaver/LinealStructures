@@ -44,7 +44,7 @@ namespace Lab_1_lineal
         {
             if (mainArrayBox.Text == "") return;
 
-            stack.Push(Convert.ToInt32(mainArrayBox.Text));
+            stack.Push(Convert.ToString(mainArrayBox.Text));
             MessageBox.Show("Element added successfully!");
             NextAddButton.Visible = false;
             NextAddButton.Enabled = false;
@@ -82,24 +82,26 @@ namespace Lab_1_lineal
 
         private void StackForm_Load(object sender, EventArgs e)
         {
-            stack.Push(0);
-            stack.Push(1);
-            stack.Push(2);
-            stack.Push(3);
-            stack.Push(4);
+            stack.Push("0");
+            stack.Push("1");
+            stack.Push("кря");
+            stack.Push("3");
+            stack.Push("мяк");
 
             NextAddButton.Visible = false;
             NextAddButton.Enabled = false;
             mainArrayBox.Enabled = false;
             mainArrayBox.Visible = false;
             pictureBox2.Visible = true;
+            ContainsNextButton.Enabled = false;
+            ContainsNextButton.Visible = false;
 
             WriteList();
         }
 
         private void PopButton_Click(object sender, EventArgs e)
         {
-            int data = stack.Pop();
+            string data = stack.Pop();
             MessageBox.Show($"Your element: {data} and now it is GONEEEEEEEE");
             WriteList();
         }
@@ -107,6 +109,43 @@ namespace Lab_1_lineal
         private void PeekButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show($"Your element: {stack.Peek()}");
+        }
+
+        private void ContainsButton_Click(object sender, EventArgs e)
+        {
+            mainArrayLabel.Text = "Write element that you want to check -> ";
+            NextAddButton.Text = "Next";
+            pictureBox2.Visible = false;
+            mainArrayBox.Enabled = true;
+            mainArrayBox.Visible = true;
+            ContainsNextButton.Enabled = true;
+            ContainsNextButton.Visible = true;
+        }
+
+        private void ContainsNextButton_Click(object sender, EventArgs e)
+        {
+            if (mainArrayBox.Text == "") return;
+
+            mainArrayBox.Enabled = false;
+            mainArrayBox.Visible = false;
+            pictureBox2.Visible = true;
+            ContainsNextButton.Enabled = false;
+            ContainsNextButton.Visible = false;
+
+            WriteList();
+            if (stack.Contains(Convert.ToString(mainArrayBox.Text)))
+            {
+                MessageBox.Show("True");
+            }
+            else
+            {
+                MessageBox.Show("False");
+            }
+        }
+
+        private void CountButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"Amount of elements: {stack.AmountOfEl()}");
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Lab_1_lineal
 {
     public class Node
     {
-        int data;
+        string data;
         Node next = null;
 
         public void SetNext(Node next)
@@ -16,7 +16,7 @@ namespace Lab_1_lineal
             this.next = next;
         }
 
-        public void SetData(int data)
+        public void SetData(string data)
         {
             this.data = data;
         }
@@ -25,7 +25,7 @@ namespace Lab_1_lineal
         {
             return this.next;
         }
-        public int GetData()
+        public string GetData()
         {
             return this.data;
         }

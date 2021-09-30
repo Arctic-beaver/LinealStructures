@@ -36,11 +36,11 @@ namespace Lab_1_lineal
 
         private void ListForm_Load(object sender, EventArgs e)
         {
-            list.Add(0, 0);
-            list.Add(1, 1);
-            list.Add(2, 2);
-            list.Add(3, 3);
-            list.Add(4, 4);
+            list.Add("0", 0);
+            list.Add("1", 1);
+            list.Add("мяф", 2);
+            list.Add("3", 3);
+            list.Add("4", 4);
 
             NextAddButton.Visible = false;
             NextAddButton.Enabled = false;
@@ -56,7 +56,7 @@ namespace Lab_1_lineal
            
             Form listChoosePositionForm = new ListChoosePositionForm(list, true);
             listChoosePositionForm.ShowDialog();
-            mainArrayLabel.Text = "Write a number (element that you want to add) -> ";
+            mainArrayLabel.Text = "Write element that you want to add -> ";
             NextAddButton.Text = "Next";
             pictureBox2.Visible = false;
             mainArrayBox.Enabled = true;
@@ -68,24 +68,15 @@ namespace Lab_1_lineal
         private void NextAddButton_Click(object sender, EventArgs e)
         {
             if (mainArrayBox.Text == "") return;
-            int number;
-            bool success = int.TryParse(mainArrayBox.Text, out number);
-            if (success)
-            {
-                 list.Add(Convert.ToInt32(mainArrayBox.Text), list.chosen_pos);
-                 MessageBox.Show("Element added successfully!");
-                NextAddButton.Visible = false;
-                NextAddButton.Enabled = false;
-                mainArrayBox.Enabled = false;
-                mainArrayBox.Visible = false;
-                pictureBox2.Visible = true;
-                WriteList();
-            }
-            else
-            {
-                MessageBox.Show("Wrong entering!");
-            }
-           
+
+            list.Add(Convert.ToString(mainArrayBox.Text), list.chosen_pos);
+            MessageBox.Show("Element added successfully!");
+            NextAddButton.Visible = false;
+            NextAddButton.Enabled = false;
+            mainArrayBox.Enabled = false;
+            mainArrayBox.Visible = false;
+            pictureBox2.Visible = true;
+            WriteList();
         }
 
         private void DeleteButton_Click(object sender, EventArgs e)

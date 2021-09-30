@@ -28,17 +28,9 @@ namespace Lab_1_lineal
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-            int number;
-            bool success = int.TryParse(chosenE1.Text, out number);
-            if (success)
-            {
-                list.chosen_el = Convert.ToInt32(chosenE1.Text);
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Wrong entering!");
-            }
+            
+            list.chosen_el = Convert.ToString(chosenE1.Text);
+            this.Close();
             
         }
     }

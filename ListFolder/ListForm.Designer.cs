@@ -178,7 +178,7 @@ namespace Lab_1_lineal
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Lab_1_lineal.Properties.Resources.full1;
-            this.pictureBox2.Location = new System.Drawing.Point(-30, 296);
+            this.pictureBox2.Location = new System.Drawing.Point(-24, 299);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(908, 92);
             this.pictureBox2.TabIndex = 39;
