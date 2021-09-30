@@ -72,7 +72,7 @@ namespace Lab_1_lineal
             if (success)
             {
                 array.Add(Convert.ToInt32(mainArrayBox.Text), array.chosen_pos);
-            MessageBox.Show("Элемент успешно добавлен!");
+            MessageBox.Show("Element added successfully!");
             NextAddButton.Visible = false;
             NextAddButton.Enabled = false;
             mainArrayBox.Enabled = false;
@@ -97,7 +97,7 @@ namespace Lab_1_lineal
             arrayChoosePositionForm.ShowDialog();
 
             array.Delete(array.chosen_pos);
-            MessageBox.Show("Элемент успешно удалён!");
+            MessageBox.Show("Element deleted successfully!");
 
             WriteArray();
         }
