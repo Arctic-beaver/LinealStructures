@@ -65,6 +65,7 @@
     <Compile Include="ArrayFolder\ArrayChoosePositionForm.Designer.cs">
       <DependentUpon>ArrayChoosePositionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListFolder\Node.cs" />
     <Compile Include="StackFolder\StackClass.cs" />
     <Compile Include="ListFolder\ListClass.cs" />
     <Compile Include="InfixPostfixFormFolder\InfixPostfixForm.cs">
