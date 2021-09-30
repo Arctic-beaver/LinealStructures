@@ -30,19 +30,20 @@ namespace Lab_1_lineal
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StackForm));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BackButton = new System.Windows.Forms.Button();
+            this.PopButton = new System.Windows.Forms.Button();
+            this.PushButton = new System.Windows.Forms.Button();
+            this.PeekButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.NextAddButton = new System.Windows.Forms.Button();
+            this.mainArrayLabel = new System.Windows.Forms.Label();
+            this.mainArrayBox = new System.Windows.Forms.TextBox();
+            this.YourListLabel = new System.Windows.Forms.Label();
+            this.ListLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Lab_1_lineal.Properties.Resources.full1;
-            this.pictureBox1.Location = new System.Drawing.Point(-54, -8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(908, 92);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
             // 
             // BackButton
             // 
@@ -57,20 +58,145 @@ namespace Lab_1_lineal
             this.BackButton.UseVisualStyleBackColor = false;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
+            // PopButton
+            // 
+            this.PopButton.BackColor = System.Drawing.Color.Bisque;
+            this.PopButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PopButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PopButton.Location = new System.Drawing.Point(339, 141);
+            this.PopButton.Name = "PopButton";
+            this.PopButton.Size = new System.Drawing.Size(145, 61);
+            this.PopButton.TabIndex = 15;
+            this.PopButton.Text = "Pop";
+            this.PopButton.UseVisualStyleBackColor = false;
+            this.PopButton.Click += new System.EventHandler(this.PopButton_Click);
+            // 
+            // PushButton
+            // 
+            this.PushButton.BackColor = System.Drawing.Color.Bisque;
+            this.PushButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PushButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PushButton.Location = new System.Drawing.Point(122, 141);
+            this.PushButton.Name = "PushButton";
+            this.PushButton.Size = new System.Drawing.Size(145, 61);
+            this.PushButton.TabIndex = 16;
+            this.PushButton.TabStop = false;
+            this.PushButton.Text = "Push";
+            this.PushButton.UseVisualStyleBackColor = false;
+            this.PushButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // PeekButton
+            // 
+            this.PeekButton.BackColor = System.Drawing.Color.Bisque;
+            this.PeekButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PeekButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PeekButton.Location = new System.Drawing.Point(562, 141);
+            this.PeekButton.Name = "PeekButton";
+            this.PeekButton.Size = new System.Drawing.Size(145, 61);
+            this.PeekButton.TabIndex = 17;
+            this.PeekButton.Text = "Peek";
+            this.PeekButton.UseVisualStyleBackColor = false;
+            this.PeekButton.Click += new System.EventHandler(this.PeekButton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Lab_1_lineal.Properties.Resources.full1;
+            this.pictureBox1.Location = new System.Drawing.Point(-54, -8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(908, 92);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Lab_1_lineal.Properties.Resources.full1;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 278);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(908, 92);
+            this.pictureBox2.TabIndex = 45;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // NextAddButton
+            // 
+            this.NextAddButton.BackColor = System.Drawing.Color.RosyBrown;
+            this.NextAddButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.NextAddButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NextAddButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.NextAddButton.Location = new System.Drawing.Point(675, 337);
+            this.NextAddButton.Name = "NextAddButton";
+            this.NextAddButton.Size = new System.Drawing.Size(127, 30);
+            this.NextAddButton.TabIndex = 44;
+            this.NextAddButton.UseVisualStyleBackColor = false;
+            this.NextAddButton.Click += new System.EventHandler(this.NextAddButton_Click);
+            // 
+            // mainArrayLabel
+            // 
+            this.mainArrayLabel.AutoSize = true;
+            this.mainArrayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.mainArrayLabel.Location = new System.Drawing.Point(144, 278);
+            this.mainArrayLabel.Name = "mainArrayLabel";
+            this.mainArrayLabel.Size = new System.Drawing.Size(96, 24);
+            this.mainArrayLabel.TabIndex = 43;
+            this.mainArrayLabel.Text = "Welcome!";
+            this.mainArrayLabel.Click += new System.EventHandler(this.mainArrayLabel_Click);
+            // 
+            // mainArrayBox
+            // 
+            this.mainArrayBox.Location = new System.Drawing.Point(148, 339);
+            this.mainArrayBox.Name = "mainArrayBox";
+            this.mainArrayBox.Size = new System.Drawing.Size(502, 22);
+            this.mainArrayBox.TabIndex = 42;
+            this.mainArrayBox.TextChanged += new System.EventHandler(this.mainArrayBox_TextChanged);
+            // 
+            // YourListLabel
+            // 
+            this.YourListLabel.AutoSize = true;
+            this.YourListLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.YourListLabel.Location = new System.Drawing.Point(144, 411);
+            this.YourListLabel.Name = "YourListLabel";
+            this.YourListLabel.Size = new System.Drawing.Size(113, 24);
+            this.YourListLabel.TabIndex = 41;
+            this.YourListLabel.Text = "Your stack:";
+            this.YourListLabel.Click += new System.EventHandler(this.YourListLabel_Click);
+            // 
+            // ListLabel
+            // 
+            this.ListLabel.AutoSize = true;
+            this.ListLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ListLabel.Location = new System.Drawing.Point(144, 445);
+            this.ListLabel.Name = "ListLabel";
+            this.ListLabel.Size = new System.Drawing.Size(189, 24);
+            this.ListLabel.TabIndex = 40;
+            this.ListLabel.Text = "Here must be stack";
+            this.ListLabel.Click += new System.EventHandler(this.ListLabel_Click);
+            // 
             // StackForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
             this.ClientSize = new System.Drawing.Size(827, 605);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.NextAddButton);
+            this.Controls.Add(this.mainArrayLabel);
+            this.Controls.Add(this.mainArrayBox);
+            this.Controls.Add(this.YourListLabel);
+            this.Controls.Add(this.ListLabel);
+            this.Controls.Add(this.PeekButton);
+            this.Controls.Add(this.PushButton);
+            this.Controls.Add(this.PopButton);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StackForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Stack";
+            this.Load += new System.EventHandler(this.StackForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -78,5 +204,14 @@ namespace Lab_1_lineal
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BackButton;
+        private System.Windows.Forms.Button PopButton;
+        private System.Windows.Forms.Button PushButton;
+        private System.Windows.Forms.Button PeekButton;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button NextAddButton;
+        private System.Windows.Forms.Label mainArrayLabel;
+        private System.Windows.Forms.TextBox mainArrayBox;
+        private System.Windows.Forms.Label YourListLabel;
+        private System.Windows.Forms.Label ListLabel;
     }
 }

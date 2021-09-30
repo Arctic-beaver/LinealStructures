@@ -8,7 +8,7 @@ namespace Lab_1_lineal
 {
     class StackClass
     {
-        ListClass list;
+        public ListClass list = new ListClass();
 
         public void Push(int data)
         {
@@ -25,6 +25,16 @@ namespace Lab_1_lineal
         public int Peek()
         {
              return list.GetDataOnPos(list.GetAmountOfNodes() - 1);
+        }
+
+        public void Contains()
+        {
+
+        }
+
+        public void AmountOfEl()
+        {
+
         }
 
         public void Finish()
