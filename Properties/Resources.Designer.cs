@@ -83,6 +83,16 @@ namespace Lab_1_lineal.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imgonline_com_ua_Resize_NhDqcfbjlr1W3 {
+            get {
+                object obj = ResourceManager.GetObject("imgonline-com-ua-Resize-NhDqcfbjlr1W3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap man_min {
             get {
                 object obj = ResourceManager.GetObject("man_min", resourceCulture);

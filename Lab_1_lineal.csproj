@@ -177,5 +177,8 @@
   <ItemGroup>
     <None Include="Resources\min_owl.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-NhDqcfbjlr1W3.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
