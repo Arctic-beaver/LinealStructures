@@ -34,7 +34,7 @@ namespace Lab_1_lineal
             return shovel;
         }
 
-        public string ToStr()
+        public override string ToString()
         {
             string list_to_str = "";
             Node shovel = head;

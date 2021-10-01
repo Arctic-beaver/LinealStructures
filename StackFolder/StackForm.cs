@@ -76,7 +76,7 @@ namespace Lab_1_lineal
 
         public void WriteList()
         {
-            string List_to_str = stack.list.ToStr();
+            string List_to_str = stack.list.ToString();
             ListLabel.Text = List_to_str;
         }
 
