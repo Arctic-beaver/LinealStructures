@@ -8,26 +8,7 @@ namespace Lab_1_lineal
 {
     public class Node
     {
-        string data;
-        Node next = null;
-
-        public void SetNext(Node next)
-        {
-            this.next = next;
-        }
-
-        public void SetData(string data)
-        {
-            this.data = data;
-        }
-
-        public Node GetNext()
-        {
-            return this.next;
-        }
-        public string GetData()
-        {
-            return this.data;
-        }
+        public string Data { get; set; }
+        public Node Next { get; set; }
     }
 }

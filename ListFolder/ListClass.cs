@@ -27,9 +27,9 @@ namespace Lab_1_lineal
         public Node GetLast()
         {
             Node shovel = head;
-            while (shovel.GetNext() != null)
+            while (shovel.Next != null)
             {
-                shovel = shovel.GetNext();
+                shovel = shovel.Next;
             }
             return shovel;
         }
@@ -39,10 +39,10 @@ namespace Lab_1_lineal
             string list_to_str = "";
             Node shovel = head;
             int counter = 0;
-            while (shovel.GetNext() != null)
+            while (shovel.Next != null)
             {
-                shovel = shovel.GetNext();
-                list_to_str += shovel.GetData();
+                shovel = shovel.Next;
+                list_to_str += shovel.Data;
                 list_to_str += " -> ";
                 if (counter % 20 == 0 && counter != 0) list_to_str += "\n";
                 counter += 1;
@@ -55,7 +55,7 @@ namespace Lab_1_lineal
             Node shovel = head;
             for (int i = 0; i <= position; i++)
             {
-                shovel = shovel.GetNext();
+                shovel = shovel.Next;
             }
             return shovel;
         }
@@ -65,9 +65,9 @@ namespace Lab_1_lineal
             Node shovel = head;
             for (int i = 0; i <= position; i++)
             {
-                shovel = shovel.GetNext();
+                shovel = shovel.Next;
             }
-            return shovel.GetData();
+            return shovel.Data;
         }
 
         public int Find(string element)
@@ -75,10 +75,10 @@ namespace Lab_1_lineal
             int position = 0;
 
             Node shovel = head;
-            while (shovel.GetNext() != null)
+            while (shovel.Next != null)
             {
-                shovel = shovel.GetNext();
-                if (shovel.GetData() == element) return position;
+                shovel = shovel.Next;
+                if (shovel.Data == element) return position;
                 position += 1;
             }
             //if we don't have such an element
@@ -89,27 +89,27 @@ namespace Lab_1_lineal
         {
             //to the end or center
             Node new_node = new Node();
-            new_node.SetData(data);
+            new_node.Data = data;
             if (!is_end)
             {
-              new_node.SetNext(previous.GetNext());
+              new_node.Next = previous.Next;
             }
             
-            previous.SetNext(new_node);
+            previous.Next = new_node;
         }
 
         public void CreateNode(string data)
         {
             //to head
             Node new_node = new Node();
-            new_node.SetData(data);
+            new_node.Data = data;
 
             if (amount_of_nodes != 0)
             {
-                new_node.SetNext(head.GetNext());
+                new_node.Next = head.Next;
             }
             else head = new Node();
-            head.SetNext(new_node);
+            head.Next = new_node;
         }
 
         public void Add(string data, int position)
@@ -137,9 +137,9 @@ namespace Lab_1_lineal
             //find previous;
             for (int i = 0; i < position; i++)
             {
-                shovel = shovel.GetNext();
+                shovel = shovel.Next;
             }
-            shovel.SetNext(shovel.GetNext().GetNext());
+            shovel.Next = shovel.Next.Next;
             amount_of_nodes -= 1;
         }
 

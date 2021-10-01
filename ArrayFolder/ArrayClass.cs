@@ -8,9 +8,9 @@ namespace Lab_1_lineal
 {
     public class ArrayClass
     {
-        static int length;
+        int length;
         int[] mas;
-        static int filled_length = 0;
+        int filled_length = 0;
         public int chosen_pos, chosen_el;
 
         public int Length()
