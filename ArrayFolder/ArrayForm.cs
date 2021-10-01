@@ -50,8 +50,10 @@ namespace Lab_1_lineal
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            Form arrayChoosePositionForm = new ArrayChoosePositionForm(array, true);
+            using (Form arrayChoosePositionForm = new ArrayChoosePositionForm(array, true))
+            {
             arrayChoosePositionForm.ShowDialog();
+            };
             mainArrayLabel.Text = "Write a number (element that you want to add) -> ";
             NextAddButton.Text = "Next";
             pictureBox2.Visible = false;
@@ -90,8 +92,11 @@ namespace Lab_1_lineal
             {
                 MessageBox.Show("Чтобы продать что-нибудь ненужное, нужно купить что-нибудь ненужное... Короче нечего удалять.");
             }
-            Form arrayChoosePositionForm = new ArrayChoosePositionForm(array, false);
-            arrayChoosePositionForm.ShowDialog();
+
+            using (Form arrayChoosePositionForm = new ArrayChoosePositionForm(array, false))
+            { 
+             arrayChoosePositionForm.ShowDialog();
+            };
 
             array.Delete(array.chosen_pos);
             MessageBox.Show("Element deleted successfully!");
@@ -101,15 +106,20 @@ namespace Lab_1_lineal
 
         private void GetElementButton_Click(object sender, EventArgs e)
         {
-            Form arrayChoosePositionForm = new ArrayChoosePositionForm(array, false);
-            arrayChoosePositionForm.ShowDialog();
+            using (Form arrayChoosePositionForm = new ArrayChoosePositionForm(array, false))
+            {
+                arrayChoosePositionForm.ShowDialog();
+            };
             MessageBox.Show("Element on this position: " + Convert.ToString(array.Get(array.chosen_pos)));
         }
 
         private void FindPositionButton_Click(object sender, EventArgs e)
         {
-            Form arrayChosenElementForm = new ArrayChooseElementForm(array);
-            arrayChosenElementForm.ShowDialog();
+            using (Form arrayChosenElementForm = new ArrayChooseElementForm(array))
+            {
+                arrayChosenElementForm.ShowDialog();
+            };
+             
             int result = array.Find(array.chosen_el);
             if (result == -1)
             {

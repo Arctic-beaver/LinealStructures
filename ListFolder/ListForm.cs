@@ -50,9 +50,11 @@ namespace Lab_1_lineal
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-           
-            Form listChoosePositionForm = new ListChoosePositionForm(list, true);
-            listChoosePositionForm.ShowDialog();
+
+            using (Form listChoosePositionForm = new ListChoosePositionForm(list, true))
+            {
+                listChoosePositionForm.ShowDialog();
+            };
             mainArrayLabel.Text = "Write element that you want to add -> ";
             NextAddButton.Text = "Next";
             pictureBox2.Visible = false;
@@ -82,9 +84,11 @@ namespace Lab_1_lineal
             {
                 MessageBox.Show("Чтобы продать что-нибудь ненужное, нужно купить что-нибудь ненужное... Короче нечего удалять.");
             }
-            Form listChoosePositionForm = new ListChoosePositionForm(list, false);
-            listChoosePositionForm.ShowDialog();
-
+            using (Form listChoosePositionForm = new ListChoosePositionForm(list, false))
+            {
+                listChoosePositionForm.ShowDialog();
+            };
+            
             list.Delete(list.chosen_pos);
             MessageBox.Show("Element deleted successfullly");
 
@@ -93,15 +97,20 @@ namespace Lab_1_lineal
 
         private void GetElementButton_Click(object sender, EventArgs e)
         {
-            Form listChoosePositionForm = new ListChoosePositionForm(list, false);
+            using (Form listChoosePositionForm = new ListChoosePositionForm(list, false)) 
+            { 
             listChoosePositionForm.ShowDialog();
+            };
             MessageBox.Show("Element on this position: " + Convert.ToString(list.GetDataOnPos(list.chosen_pos)));
         }
 
         private void FindPositionButton_Click(object sender, EventArgs e)
         {
-            Form listChosenElementForm = new ListChooseElementForm(list);
-            listChosenElementForm.ShowDialog();
+            using (Form listChosenElementForm = new ListChooseElementForm(list))
+            {
+                listChosenElementForm.ShowDialog();
+            };
+            
             string result = Convert.ToString(list.Find(list.chosen_el));
             if (result == "-1")
             {
