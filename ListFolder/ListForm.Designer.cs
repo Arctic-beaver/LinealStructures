@@ -19,6 +19,7 @@ namespace Lab_1_lineal
                 components.Dispose();
             }
             base.Dispose(disposing);
+            list.Dispose();
         }
 
         #region Windows Form Designer generated code

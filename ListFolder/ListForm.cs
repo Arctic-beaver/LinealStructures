@@ -26,9 +26,7 @@ namespace Lab_1_lineal
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            Dispose();
-            list.Dispose();
-            this.Close();
+         this.Close();
         }
 
         private void ListForm_Load(object sender, EventArgs e)

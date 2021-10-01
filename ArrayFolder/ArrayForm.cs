@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Lab_1_lineal
 {
-    public partial class ArrayForm : Form
+    public partial class ArrayForm : Form 
     {
         ArrayClass array = new ArrayClass();
         public ArrayForm(ArrayClass given_array)
@@ -30,10 +30,10 @@ namespace Lab_1_lineal
 
             MasLabel.Text = mas_to_str;
         }
+
+        
         private void BackButton_Click(object sender, EventArgs e)
         {
-            Dispose();
-            array.Dispose();
             this.Close();
         }
 

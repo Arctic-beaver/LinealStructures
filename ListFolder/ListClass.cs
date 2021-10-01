@@ -44,7 +44,7 @@ namespace Lab_1_lineal
                 shovel = shovel.Next;
                 list_to_str += shovel.Data;
                 list_to_str += " -> ";
-                if (counter % 20 == 0 && counter != 0) list_to_str += "\n";
+                if (counter % 10 == 0 && counter != 0) list_to_str += "\n";
                 counter += 1;
                 
             }

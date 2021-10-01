@@ -19,21 +19,26 @@ namespace Lab_1_lineal
 
         private void List_Click(object sender, EventArgs e)
         {
-            Form listForm = new ListForm();
-            listForm.ShowDialog();
+            using (Form listForm = new ListForm())
+            {
+               listForm.ShowDialog();
+            };
         }
 
         private void Array_Click(object sender, EventArgs e)
         {
-            Form arrayInitForm = new ArrayInitForm();
-            arrayInitForm.ShowDialog();
+            using (Form arrayInitForm = new ArrayInitForm())
+            {
+                arrayInitForm.ShowDialog();
+            };
         }
 
         private void Stack_Click(object sender, EventArgs e)
-        {
-            Form stackForm = new StackForm();
-            stackForm.ShowDialog();
-        }
+        {using (Form stackForm = new StackForm())
+            {
+                stackForm.ShowDialog();
+            };
+         }
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
@@ -42,8 +47,15 @@ namespace Lab_1_lineal
 
         private void InfixPostfixButton_Click(object sender, EventArgs e)
         {
-            Form infixPostfixForm = new InfixPostfixForm();
-            infixPostfixForm.ShowDialog();
+            using (Form infixPostfixForm = new InfixPostfixForm())
+            {
+                infixPostfixForm.ShowDialog();
+            };
+        }
+
+        private void StartForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

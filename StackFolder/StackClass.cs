@@ -15,6 +15,7 @@ namespace Lab_1_lineal
             list.Add(data, list.GetAmountOfNodes());
         }
 
+
         public string Pop ()
         {
             string result = list.GetDataOnPos(list.GetAmountOfNodes() - 1);
@@ -38,6 +39,7 @@ namespace Lab_1_lineal
             return list.GetAmountOfNodes();
         }
 
+        
         public void Finish()
         {
             list.Dispose();
