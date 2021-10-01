@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab_1_lineal
 {
-    public class ArrayClass
+    public class ArrayClass : IDisposable
     {
         int length;
         int[] mas;
@@ -110,13 +110,37 @@ namespace Lab_1_lineal
                 }
             }
             filled_length -= 1;
-        } 
+        }
 
-        public void Free()
+        private bool disposed = false;
+
+        // реализация интерфейса IDisposable.
+        public void Dispose()
         {
-            Array.Clear(mas, 0, length);
-            length = 0;
-            filled_length = 0;
+            Dispose(true);
+            // подавляем финализацию
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposed)
+            {
+                if (disposing)
+                {
+                    Array.Clear(mas, 0, length);
+                    length = 0;
+                    filled_length = 0;
+                }
+                // освобождаем неуправляемые объекты
+                disposed = true;
+            }
+        }
+
+        // Деструктор
+        ~ArrayClass()
+        {
+            Dispose(false);
         }
     }
 }

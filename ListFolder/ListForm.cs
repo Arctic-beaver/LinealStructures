@@ -18,10 +18,6 @@ namespace Lab_1_lineal
             InitializeComponent();
         }
 
-        ~ListForm()
-        {
-            list.Free();
-        }
         public void WriteList()
         {
             string List_to_str = list.ToStr();
@@ -30,7 +26,8 @@ namespace Lab_1_lineal
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            list.Free();
+            Dispose();
+            list.Dispose();
             this.Close();
         }
 

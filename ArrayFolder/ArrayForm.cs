@@ -19,11 +19,6 @@ namespace Lab_1_lineal
             array = given_array;
         }
 
-        ~ArrayForm()
-        {
-            array.Free();
-        }
-
         public void WriteArray()
         {
             string mas_to_str = "";
@@ -37,6 +32,8 @@ namespace Lab_1_lineal
         }
         private void BackButton_Click(object sender, EventArgs e)
         {
+            Dispose();
+            array.Dispose();
             this.Close();
         }
 

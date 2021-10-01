@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab_1_lineal
 {
-    public class ListClass
+    public class ListClass : IDisposable
     {
         static Node head;
         static int amount_of_nodes = 0;
@@ -143,10 +143,34 @@ namespace Lab_1_lineal
             amount_of_nodes -= 1;
         }
 
-        public void Free()
+        private bool disposed = false;
+
+        // реализация интерфейса IDisposable.
+        public void Dispose()
         {
-            head = null;
-            amount_of_nodes = 0;
+            Dispose(true);
+            // подавляем финализацию
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposed)
+            {
+                if (disposing)
+                {
+                    head = null;
+                    amount_of_nodes = 0;
+                }
+                // освобождаем неуправляемые объекты
+                disposed = true;
+            }
+        }
+
+        // Деструктор
+        ~ListClass()
+        {
+            Dispose(false);
         }
     }
 }

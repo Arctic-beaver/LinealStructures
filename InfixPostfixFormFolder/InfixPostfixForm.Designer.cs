@@ -143,6 +143,7 @@ namespace Lab_1_lineal
             this.Name = "InfixPostfixForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Infix->postfix";
+            this.Load += new System.EventHandler(this.InfixPostfixForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

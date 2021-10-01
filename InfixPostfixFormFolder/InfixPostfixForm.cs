@@ -121,5 +121,10 @@ namespace Lab_1_lineal
             }
             PostfixLabel.Text = output;
         }
+
+        private void InfixPostfixForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

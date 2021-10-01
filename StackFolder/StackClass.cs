@@ -40,7 +40,7 @@ namespace Lab_1_lineal
 
         public void Finish()
         {
-            list.Free();
+            list.Dispose();
         }
     }
 }
